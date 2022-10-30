@@ -1,0 +1,25 @@
+body
+{
+    background-color: #222;
+    overflow: hidden;
+}
+
+.bubble
+{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 83, 226);
+
+    animation: anim 0.5s forwards ease-out;
+}
+
+@keyframes anim
+{
+    to
+    {
+        top: var(--y);
+        left: var(--x);
+        filter: hue-rotate(-80deg);
+        opacity: 0;
+    }
+}
